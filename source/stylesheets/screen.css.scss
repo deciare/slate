@@ -557,6 +557,13 @@ html, body {
       padding: $code-annotation-padding 2em;
       color: #eee;
     }
+    &>hr {
+      border: 1em solid $nav-bg;
+      margin: 0;
+    }
+    &>hr + p {
+      display: none;
+    }
   }
 }
 
