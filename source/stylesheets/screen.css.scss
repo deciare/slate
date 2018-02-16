@@ -75,7 +75,7 @@ html, body {
   .logo {
     display: block;
     max-width: 100%;
-    margin-bottom: $logo-margin;
+    margin: 0 auto $logo-margin auto;
   }
 
   &>.search {
@@ -172,6 +172,16 @@ html, body {
   .toc-h2 {
     padding-left: $nav-padding + $nav-indent;
     font-size: 12px;
+  }
+
+  .toc-list-h3 {
+      display: none;
+      background-color: $nav-subitem-bg;
+  }
+
+  .toc-h3 {
+      padding-left: ($nav-padding * 2) + $nav-indent;
+      font-size: 12px;
   }
 
   .toc-footer {
@@ -340,7 +350,7 @@ html, body {
   }
 
   // the div is the tocify hidden div for placeholding stuff
-  &>h1, &>h2, &>div {
+  &>h1, &>h2, &>h3, &>div {
     clear:both;
   }
 
